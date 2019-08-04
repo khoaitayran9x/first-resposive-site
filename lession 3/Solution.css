@@ -1,0 +1,23 @@
+/* AA */
+
+@media and (max-width: 400px) {
+  /* styles */
+}
+
+/* BB */
+
+@media and (min-width: 301px) and (max-width: 600px) {
+  /* styles */
+}
+
+/* CC */
+
+@media and (min-width: 601px) {
+  /* styles */
+}
+
+/* DD */
+
+@media and (min-width: 961px) {
+  /* styles */
+}
