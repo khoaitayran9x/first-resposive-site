@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 1em;
+		}
+		.inning{
+			display: none;
+		}
+		.shortName{
+			display: block;
+		}
+		.longName{
+			display: none;
+		}
+		@media screen and (min-width: 360px){
+			.shortName{
+				display: none;
+			}
+			.longName{
+				display: block;
+			}
+			.inning{
+				display: table-cell;
+			}
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Team</th>
+			<th class="inning">1st</th>
+			<th class="inning">2st</th>
+			<th class="inning">3st</th>
+			<th class="inning">4st</th>
+			<th class="inning">5st</th>
+			<th class="inning">6st</th>
+			<th class="inning">7st</th>
+			<th class="inning">8st</th>
+			<th class="inning">9st</th>
+			<th>Final</th>
+		</tr>
+		<tr>
+			<td>
+				<span class="shortName">TOR</span>
+				<span class="longName">Toronto Blue Jays</span>
+			</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">4</td>
+			<td class="inning">0</td>
+			<td class="inning">1</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="final">5</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="shortName">SAN</span>
+				<span class="longName">San Francisco Giants</span>
+			</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">4</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="inning">0</td>
+			<td class="final">4</td>
+		</tr>
+	</table>
+</body>
+</html>

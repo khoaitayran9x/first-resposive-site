@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		 table {
+	        border: 1px solid #ddd;
+	      }
+	      tr:nth-child(odd) {
+	        background-color: #f9f9f9;
+	      }
+		@media only screen and (max-width: 500px){
+			table, thead, tbody, th, td, tr {
+	          display: block;
+	        }
+	        thead tr {
+	          position: absolute;
+	          top: -9999px;
+	          left: -9999px;
+	        }
+			td{
+				position: relative;
+				padding-left: 50%;
+			}
+			td:before{
+				position: absolute;
+				left: 6px;
+				content: attr(data-th);
+				font-weight: bold;
+			}
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Team</th>
+				<th>1st</th>
+				<th>2st</th>
+				<th>3st</th>
+				<th>4st</th>
+				<th>5st</th>
+				<th>6st</th>
+				<th>7st</th>
+				<th>8st</th>
+				<th>9st</th>
+				<th>Final</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-th="Team">Toronto</td>
+				<td data-th="1st">0</td>
+				<td data-th="2st">0</td>
+				<td data-th="3st">0</td>
+				<td data-th="4st">4</td>
+				<td data-th="5st">0</td>
+				<td data-th="6st">1</td>
+				<td data-th="7st">0</td>
+				<td data-th="8st">0</td>
+				<td data-th="9st">0</td>
+				<td data-th="Final">5</td>
+			</tr>
+			<tr>
+				<td data-th="Team">San Francisco</td>
+				<td data-th="1st">0</td>
+				<td data-th="2st">0</td>
+				<td data-th="3st">0</td>
+				<td data-th="4st">4</td>
+				<td data-th="5st">0</td>
+				<td data-th="6st">0</td>
+				<td data-th="7st">0</td>
+				<td data-th="8st">0</td>
+				<td data-th="9st">0</td>
+				<td data-th="Final">4</td>
+			</tr>
+		</tbody>
+		
+	</table>
+</body>
+</html>
